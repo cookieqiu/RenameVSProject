@@ -23,7 +23,7 @@ void ScanDirectory(string path, in Regex src, in string target)
         var fileName = Path.GetFileName(filePath);
         var basePath = Path.GetDirectoryName(filePath)!;
 
-        ReplaceFileContent(filePath, src, target);
+        //ReplaceFileContent(filePath, src, target);
 
         if (!src.IsMatch(fileName)) continue;
 
